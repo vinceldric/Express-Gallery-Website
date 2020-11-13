@@ -1,0 +1,29 @@
+/* 
+Include any CSS you need to:
+- limit the max width of the gallery
+- layout the images responsively, centering the gallery on the page
+- preserve the aspect ratio of each image
+*/
+
+/* defaults */
+* {
+  box-sizing: border-box;
+	margin: 0;
+}
+
+/* style and display of the images */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30ch, 40ch));
+  justify-content: center;
+  grid-gap: 2rem;
+
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* margin and alignment of the figcaption */
+.card {
+  margin: 0.5em;
+  text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title><%= page %></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="module" src="assets/js/client.js"></script>
+	</head>
+	<body class=<%= current %>>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+      <%- include('../partials/header'); %>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2><%= title %></h2>
+							<p><%= tagline %></p>
+						</header>							
+
+						<!-- Subcription Form -->
+							<section>
+
+								<div class="box alt">
+									<form action="/users" method="POST">
+										<div class="row gtr-25">
+											<div class="col-6" style="padding-bottom: 10px;">
+												<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+											</div>
+											<div class="col-6">
+												<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+											</div>
+											<div class="col-12" style="padding-bottom: 10px;">
+												<textarea id="comment" name="comment" placeholder="Enter Comment/Message" rows="8"></textarea>
+											</div>
+											<p>
+												<input type="submit" id="submit" name="submit" value="Submit">
+											</p>
+										</div>
+									</form>
+								</div>
+								
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+      <%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
